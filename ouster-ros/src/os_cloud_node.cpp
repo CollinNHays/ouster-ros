@@ -90,6 +90,7 @@ class OusterCloud : public OusterProcessingNodeBase {
 
     void create_publishers() {
         rclcpp::SensorDataQoS qos;
+        qos.reliable();
         imu_pub = create_publisher<sensor_msgs::msg::Imu>("imu", qos);
         lidar_pubs.resize(n_returns);
         for (int i = 0; i < n_returns; i++) {

@@ -83,7 +83,7 @@ Visualization Manager:
         Durability Policy: Volatile
         Filter size: 10
         History Policy: Keep Last
-        Reliability Policy: Best Effort
+        Reliability Policy: Reliable
         Value: /ouster/points
       Use Fixed Frame: true
       Use rainbow: true
@@ -260,3 +260,4 @@ Window Geometry:
     collapsed: false
   signal:
     collapsed: false
+
